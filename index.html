@@ -17,6 +17,8 @@
 		<script src="js/jquery.easing.1.3.js"></script>
 		<script src="js/jquery.ui.totop.js"></script>
 		<script src="js/tms-0.4.1.js"></script>
+		<script src="../safeweb/webring.js"></script>
+
 		<script>
 			$(document).ready(function(){
 				$('.slider_wrapper')._TMS({
@@ -75,9 +77,9 @@
 			<link rel="stylesheet" media="screen" href="css/ie.css">
 		<![endif]-->
 	</head>
-	<body class="">
+	<body class="" onload="javascript:wrJoinWebring('xwebringElement')">
 <!--==============================header=================================-->
-		<header class="page1">
+		<header class="page1" id="webringElement" style="position:relative;">
 			<div class="container_12">
 				<div class="grid_12">
 					<h1><a href="#" onClick="goToByScroll('page1'); return false;"><img src="images/logo.png" alt="SAFEpress logo"></a>
@@ -177,6 +179,14 @@
 							<p>
 							SAFE Network is rapidly becoming complete, which means it won't be long until SAFEpress is needed. So our first target is a working framework for web applications, and a simple blog implemented, by the time the network is ready to run it as a public web application.</p>
 							<p>
+							<h4>October-December 2015</h4>
+							<p>
+							SAFEpress has been a bit quiet lately - other team members have not been checking in so I'm assuming they've lost interest or lack time, though new people have also joined and started getting up to speed. At the same time there is continued interest and support, so we need more Devs! </p>
+							<p>Personally I've been busy with other work, so not spent any time with code, but I've still been thinking.</p>
+							<p>Reading about similar projects on the <a href="https://forum.safenetwork.io">SAFEnetwork</a> forum got me rethinking my ideas on the back-end and data architecture. This involved both throwing things up in the air so to speak, and coming up with plans for building something simple to help test ideas and experiment with the SAFEnetwork API. </p>
+							<p>I'm held back by time and also uncertainty about implementation - particularly about how Structured Data can be used on SAFEnetwork to represent relational documents such as blog-post / blog-comment.</p>
+							<p>So for now I don't have enough time or knowledge to push this sized project along without a lot of help, so we're really in need of more people doing more things to establish a what and a how, and begin doing it.</p>
+							<p>So if you are interested in creating dynamic web apps for SAFEnetwork and contributing to the early phase of a "WordPress for SAFEnetwork" please get in touch and join our <a href="https://groups.google.com/forum/#!topic/safepress/d_4XhQPT1nU">Google group</a> (also see the other resrouces below).
 							<h4>September 2015</h4>
 							<p>
 							Mostly quiet due to holidays n stuff, and trying out some stunning developments in SAFEnetwork: the "Uploader" safe_dns example can be found <a href="https://forum.safenetwork.io/t/maidsafe-dev-update-31st-august-2015/5017">here</a> and allows you to create a demo website on a local vault network!</p>
