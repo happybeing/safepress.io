@@ -17,7 +17,7 @@
 		<script src="js/jquery.easing.1.3.js"></script>
 		<script src="js/jquery.ui.totop.js"></script>
 		<script src="js/tms-0.4.1.js"></script>
-		<script src="../safeweb/webring.js"></script>
+		<script src="http://the.safewebring.safenet/webring.js"></script>
 
 		<script>
 			$(document).ready(function(){
@@ -176,9 +176,21 @@
 					<div class="slogan">
 						<h3>Status</h3>
 						<div class="text1">
+							<h4>May 2016</h4>
 							<p>
-							SAFE Network is rapidly becoming complete, which means it won't be long until SAFEpress is needed. So our first target is a working framework for web applications, and a simple blog implemented, by the time the network is ready to run it as a public web application.</p>
+							I've slowly been finding more time to work on software and with it to explore both the SAFE API and ideas for how to bootstrap SAFEpress.
+							</p>
 							<p>
+							As an interim goal - a step towards a SAFE CMS (Content Management System) - I'm looking into creating a backend for <a href='http://remotestorage.io/'>remoteStorage.js</a> to use SAFE Network to host application data. This would be a very useful feature in itself: a foundation on which to build powerful cross platform web apps, with <a href='http://offlinefirst.org/'>offline-first</a> support built in.
+							</p>
+							<p>
+							<b>Offline-first</b> means the application can work without an internet connection and synchronises with your online data when you next go online. <b>remoteStorage.js</b> has built in offline-first capability, and gives users control over where their data is stored, including with any hosting service or server that supports the remoteStorage API.
+							</p>
+							By extending remoteStorage.js to use SAFE Network for data storage, any remoteStorage.js web app will authomatically be a SAFE Network web app too. From there it will not be hard to begin building first a file based CMS, and then begin to extend this by adding a built in editor and so on, webstie templates, and so on until a full SAFEpress Web CMS is born.
+							</p>
+							<p>
+							Today I completed the first stage in the SAFE API / remoteStorage.js investigation: building a dummy remoteStorage.js backend for SAFE API which is effectively a copy of another backend ready to be converted to use the SAFE Launcher API. Here's the branch for <a href='https://github.com/theWebalyst/remotestorage.js/tree/proto-safenetwork-backend'>remoteStorage.js</a> and the <a href='https://github.com/theWebalyst/myfavoritedrinks/tree/feature/prototype-safenetwork-backend'>My Favourite Drinks</a> demo app, which for now just displays a crude SAFE Network icon next to the other backend options (Dropbox and GoogleDrive).
+							</p>
 							<h4>October-December 2015</h4>
 							<p>
 							SAFEpress has been a bit quiet lately - other team members have not been checking in so I'm assuming they've lost interest or lack time, though new people have also joined and started getting up to speed. At the same time there is continued interest and support, so we need more Devs! </p>
@@ -186,7 +198,7 @@
 							<p>Reading about similar projects on the <a href="https://forum.safenetwork.io">SAFEnetwork</a> forum got me rethinking my ideas on the back-end and data architecture. This involved both throwing things up in the air so to speak, and coming up with plans for building something simple to help test ideas and experiment with the SAFEnetwork API. </p>
 							<p>I'm held back by time and also uncertainty about implementation - particularly about how Structured Data can be used on SAFEnetwork to represent relational documents such as blog-post / blog-comment.</p>
 							<p>So for now I don't have enough time or knowledge to push this sized project along without a lot of help, so we're really in need of more people doing more things to establish a what and a how, and begin doing it.</p>
-							<p>So if you are interested in creating dynamic web apps for SAFEnetwork and contributing to the early phase of a "WordPress for SAFEnetwork" please get in touch and join our <a href="https://groups.google.com/forum/#!topic/safepress/d_4XhQPT1nU">Google group</a> (also see the other resrouces below).
+							<p>So if you are interested in creating dynamic web apps for SAFEnetwork and contributing to the early phase of a "WordPress for SAFEnetwork" please get in touch and join our <a href="https://groups.google.com/forum/#!topic/safepress/d_4XhQPT1nU">Google group</a> (also see the other resources below).
 							<h4>September 2015</h4>
 							<p>
 							Mostly quiet due to holidays n stuff, and trying out some stunning developments in SAFEnetwork: the "Uploader" safe_dns example can be found <a href="https://forum.safenetwork.io/t/maidsafe-dev-update-31st-august-2015/5017">here</a> and allows you to create a demo website on a local vault network!</p>
